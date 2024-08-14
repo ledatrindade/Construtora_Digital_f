@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Construtora Digital</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Construtora Digital - Funcionários</h1>
+        <div class="novoCliente">
+            <div class="texto">
+                <h2>Tratamos nossos clientes com o máximo de respeito e atenção!</h2>
+                <h3>Priorizando suas necessidades e resolvendo seus problemas com eficiência.</h3>
+                <h4>Ao cadastrar um novo cliente, é fundamental prestar atenção aos detalhes para garantir que todo o processo ocorra da melhor forma possível.</h4>
+            </div>
+            <button id="novo">Cadastrar Novo Cliente</button>
+        </div>
+        <div class="clienteCadastrado">
+            <h2>Atenção dedicada aos nossos clientes cadastrados é indispensável.</h2>
+            <h3>Abaixo, você encontrará a lista com o nome e o CPF de nossos estimados clientes.</h3>
+            <ul id="listaClientes">
+            </ul>
+        </div>
+    </header>
+    <main>
+        <dialog id="formularioCliente">
+            <div class="formulario">
+                <div class="titulo">
+                    <h1>Cadastro de Cliente</h1>
+                    <button id="sair">X</button>
+                    <p>Complete todos os campos.</p>
+                </div>
+                <form id="formCliente">
+                    <div class="campo1">
+                        <label>Nome Completo:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="campo2">
+                        <label>CPF:</label>
+                        <input type="number" name="cpf" id="cpf">
+                        <label>RG:</label>
+                        <input type="number" name="rg" id="rg">
+                    </div>
+                    <div class="campo3">
+                        <label>Data de Nascimento:</label>
+                        <input type="date" name="dataDeNascimento" id="dataDeNascimento">
+                    </div>
+                    <div class="campo4">
+                        <label>Endereço:</label>
+                        <input type="text" name="endereco" id="endereço">
+                        <label>CEP:</label>
+                        <input type="number" name="cep" id="cep">
+                    </div>
+                    <div class="campo5">
+                        <label>Cidade:</label>
+                        <input type="text" name="cidade" id="cidade">
+                        <label>Estado:</label>
+                        <input type="text" name="estado" id="estado">
+                    </div>
+                    <div class="campo6">
+                        <label>E-mail:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="campo7">
+                        <label>Telefone:</label>
+                        <input type="number" name="telefone" id="telefone">
+                        <label>Celular:</label>
+                        <input type="number" name="celular" id="celular">
+                    </div>
+                    <div class="button1">
+                        <input type="button" value="Salvar" id="salvar">
+                        <input type="button" value="Excluir" id="excluir">
+                    </div> 
+                </form>
+                <div class="actionButtons">
+                    <button id="editar" class="editarButton">Editar</button>
+                    <button id="visualizar" class="visualizarButton">Visualizar</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
